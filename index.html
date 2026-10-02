@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Inspera usage | Annual review</title>
+  <style>
+    :root{--ink:#11243a;--muted:#5d6d7d;--line:#dce4e8;--paper:#f4f7f8;--white:#fff;--teal:#087f78;--teal2:#dff2ed;--navy:#10283e;--amber:#b56b24;--amberbg:#fff2dc;--red:#a9433e;--shadow:0 8px 26px rgba(17,36,58,.055)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Aptos,Inter,"Segoe UI",Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}h1,h2,h3,p{margin-top:0}h1{font-size:31px;line-height:1.12;letter-spacing:-.035em;margin-bottom:8px}h2{font-size:21px;letter-spacing:-.025em;margin-bottom:5px}h3{font-size:14px;letter-spacing:-.01em}p{color:var(--muted)}.shell{max-width:1380px;margin:auto;padding:0 30px 60px}.topbar{background:var(--navy);color:#fff}.topbar-inner{max-width:1380px;margin:auto;padding:17px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:.02em}.brand-mark{width:31px;height:31px;border-radius:8px;background:#20b7a5;display:grid;place-items:center;color:#093a3a;font-size:20px;font-weight:900}.topmeta{font-size:12px;color:#b9cbd7;text-align:right}.hero{padding:34px 0 22px;display:flex;align-items:end;justify-content:space-between;gap:24px}.eyebrow{text-transform:uppercase;font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--teal);margin-bottom:9px}.hero p{max-width:680px;margin:0}.hero-actions{display:flex;gap:9px;flex-wrap:wrap}.button{background:var(--teal);border:1px solid var(--teal);border-radius:8px;color:#fff;padding:9px 14px;font-weight:700;font-size:13px;white-space:nowrap}.button.secondary{background:#fff;border-color:#cbd8dd;color:var(--ink)}.button:hover{filter:brightness(.96)}.button:focus-visible,.tab:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #69cbbd;outline-offset:2px}.tabs{display:flex;gap:5px;border-bottom:1px solid var(--line);margin-bottom:24px;overflow-x:auto}.tab{border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);padding:13px 17px 11px;font-weight:700;white-space:nowrap}.tab[aria-selected="true"]{border-color:var(--teal);color:var(--ink)}.tab-panel{display:none}.tab-panel.active{display:block}.filters{display:flex;gap:15px;align-items:end;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-bottom:22px;box-shadow:var(--shadow)}.filter{display:flex;flex-direction:column;gap:4px;min-width:135px}.filter label{font-size:11px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em}.filter select,.filter input{height:35px;border:1px solid #ccd8de;border-radius:6px;background:#fff;color:var(--ink);padding:4px 8px}.filter input[type=number]{width:105px}.filter-note{font-size:12px;color:var(--muted);max-width:480px;margin-left:auto}.grid{display:grid;gap:18px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.card{background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:var(--shadow);padding:20px}.kpi .label{color:var(--muted);font-size:12px;font-weight:700;margin-bottom:9px}.kpi .number{font-size:34px;line-height:1;font-weight:780;letter-spacing:-.05em}.kpi .foot{font-size:12px;color:var(--muted);margin-top:11px}.section-grid{grid-template-columns:1.55fr 1fr;margin-bottom:18px}.section-grid.equal{grid-template-columns:1fr 1fr}.card-header{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:18px}.card-header p{font-size:12px;margin:0}.tag{font-size:11px;background:var(--teal2);color:#06665f;border-radius:99px;padding:4px 9px;font-weight:800;white-space:nowrap}.bars{height:245px;display:flex;align-items:end;gap:9px;border-bottom:1px solid #cbd8dd;padding:0 5px}.bar-col{height:100%;flex:1;min-width:0;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:5px}.bar-track{height:190px;width:100%;display:flex;align-items:end;justify-content:center;position:relative}.bar-fill{width:min(100%,38px);min-height:2px;border-radius:4px 4px 0 0;background:linear-gradient(#36b8a9,#087f78)}.bar-fill.zero{background:#dce5e8}.bar-value{font-size:10px;font-weight:700;color:var(--ink);white-space:nowrap}.bar-label{font-size:11px;color:var(--muted);height:22px;white-space:nowrap}.legend{display:flex;gap:16px;align-items:center;margin-top:14px;font-size:12px;color:var(--muted)}.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--teal);margin-right:6px}.metric-list{display:grid;gap:14px}.metric-row{display:grid;grid-template-columns:128px 1fr 52px;gap:10px;align-items:center;font-size:12px}.metric-row strong{text-align:right}.rail{height:10px;background:#e9eff1;border-radius:99px;overflow:hidden}.rail span{display:block;height:100%;background:var(--teal);border-radius:99px}.rail.amber span{background:#dba45c}.callout{background:#eaf5f2;border:1px solid #b9ddd5;border-radius:9px;padding:15px 17px;color:#174c49;font-size:13px;margin-top:17px}.callout strong{display:block;margin-bottom:3px}.callout.warning{background:var(--amberbg);border-color:#eed1a9;color:#754a20}.statline{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0;gap:12px;font-size:13px}.statline:last-child{border-bottom:0}.statline strong{font-size:18px}.small{font-size:12px;color:var(--muted)}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);border-bottom:1px solid #cbd8dd;padding:9px 8px}td{border-bottom:1px solid #e6ecef;padding:9px 8px}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tr:last-child td{border-bottom:0}tr.highlight{background:#e8f4f1;font-weight:750}.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini{border:1px solid var(--line);border-radius:8px;padding:14px}.mini strong{display:block;font-size:21px;line-height:1.2}.mini span{font-size:11px;color:var(--muted)}.method-list{display:grid;gap:11px}.method-list p{font-size:13px;margin:0}.method-list b{color:var(--ink)}.report-sheet{background:#fff;border:1px solid var(--line);max-width:900px;margin:0 auto 20px;padding:38px 45px;box-shadow:var(--shadow)}.report-top{display:flex;align-items:start;justify-content:space-between;border-bottom:2px solid var(--navy);padding-bottom:19px;margin-bottom:24px;gap:20px}.report-top h2{font-size:28px;margin:0}.report-brand{font-weight:800;color:var(--teal);font-size:13px;text-align:right}.report-intro{font-size:13px}.report-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:19px 0}.report-kpi{border:1px solid var(--line);border-radius:7px;padding:15px}.report-kpi strong{font-size:25px;display:block}.report-kpi span{font-size:11px;color:var(--muted)}.report-section{margin-top:22px}.report-section h3{border-bottom:1px solid var(--line);padding-bottom:8px;font-size:14px}.report-footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;margin-top:25px;font-size:10px;color:var(--muted)}.privacy{font-size:12px;color:var(--muted);background:#f0f4f6;border-radius:8px;padding:12px 14px}.empty{padding:34px;text-align:center;color:var(--muted)}.error{color:var(--red);font-size:12px;min-height:17px;margin-top:6px}.hide{display:none!important}
+    .legend{flex-wrap:wrap}.bar-col.future .bar-track{background:#f4f7f8}.bar-col.future .bar-fill{display:none}.bar-col.future .bar-value,.bar-col.future .bar-label{color:#8797a3}
+    .upload-dialog{width:min(94vw,560px);max-height:min(90vh,680px);border:1px solid var(--line);border-radius:14px;padding:0;color:var(--ink);box-shadow:0 25px 80px rgba(9,29,46,.25)}.upload-dialog::backdrop{background:rgba(10,28,42,.58)}.dialog-body{padding:26px 30px 20px}.dialog-body h2{font-size:23px}.dialog-body p{font-size:13px}.dialog-steps{margin:17px 0;padding-left:20px;color:var(--ink);font-size:13px}.dialog-steps li{padding:3px 0}.file-field{display:block;margin-top:16px;font-size:12px;font-weight:800;color:var(--ink)}.file-field input{display:block;width:100%;margin-top:7px;padding:10px;border:1px dashed #aabec5;border-radius:8px;background:#f8fbfb;font-size:13px}.dialog-actions{display:flex;justify-content:flex-end;gap:9px;border-top:1px solid var(--line);padding:15px 30px;background:#f8fafb;border-radius:0 0 14px 14px}.button:disabled{opacity:.5;cursor:not-allowed}.upload-status{font-size:13px;color:#17675e;min-height:0;margin:0 0 8px}.upload-status:empty{display:none}
+    .student-toolbar{display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:18px}.student-toolbar label{display:flex;flex-direction:column;gap:5px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted)}.student-toolbar input{width:min(100%,320px);height:38px;border:1px solid #ccd8de;border-radius:7px;padding:7px 10px;background:#fff;color:var(--ink)}.student-section{margin-bottom:18px}.student-section .table-wrap{max-height:390px;overflow:auto}.student-section th{position:sticky;top:0;background:#fff;z-index:1}.student-count{font-size:12px;color:var(--muted);font-weight:700}.student-note{font-size:12px;color:var(--muted);margin:0}.student-section td:first-child{font-weight:600}
+    @media(max-width:960px){.kpis{grid-template-columns:repeat(2,1fr)}.section-grid,.section-grid.equal{grid-template-columns:1fr}.filter-note{margin-left:0;max-width:none;width:100%}}@media(max-width:580px){.shell{padding:0 15px 35px}.topbar-inner{padding:14px 15px}.hero{align-items:start;flex-direction:column}.hero-actions{width:100%}.button{flex:1}.kpis{gap:10px}.card{padding:15px}.kpi .number{font-size:28px}.filters{gap:9px}.filter{min-width:calc(50% - 5px)}.bar-value{display:none}.metric-row{grid-template-columns:100px 1fr 40px}.report-sheet{padding:20px}.report-kpis{grid-template-columns:1fr 1fr}.mini-grid{grid-template-columns:1fr}}
+    @page{size:A4;margin:13mm}@media print{body{background:#fff;color:#111}.topbar,.hero,.tabs,.filters,.screen-only,.button,.upload-dialog,.upload-status{display:none!important}.shell{max-width:none;padding:0}.tab-panel{display:none!important}#report{display:block!important}.report-sheet{border:0;box-shadow:none;max-width:none;margin:0;padding:0;min-height:267mm;break-after:page}.report-sheet:last-child{break-after:auto}.report-top{margin-top:0}.report-footer{margin-top:24px}.report-section{break-inside:avoid}table{font-size:11px}th,td{padding:6px}.report-kpi{padding:10px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">I</span><span>INSPERA <span style="font-weight:400;color:#b9cbd7">/ USAGE REVIEW</span></span></div><div class="topmeta">Calendar-year license planning<br><span id="top-asof">Snapshot refreshed —</span></div></div></div>
+  <main class="shell">
+    <div class="hero"><div><div class="eyebrow">ANNUAL USAGE DASHBOARD</div><h1>Exam activity and license planning</h1><p>Track completed attempts, distinct candidates and assessment runs. Explore how minimum-use rules change the reported population.</p></div><div class="hero-actions"><button class="button secondary" id="upload-button" aria-haspopup="dialog" aria-controls="upload-dialog">Upload CSV</button><button class="button secondary" id="download-button" title="Download a refreshed standalone HTML page">Download page</button><button class="button" id="print-button">Print A4 report</button></div></div>
+    <div id="upload-status" class="upload-status" role="status"></div>
+    <dialog id="upload-dialog" class="upload-dialog" aria-labelledby="upload-title" aria-describedby="upload-description"><div class="dialog-body"><div class="eyebrow">UPDATE THE DATA</div><h2 id="upload-title">Upload a Monitor CSV</h2><p id="upload-description">Use the CSV exported from <strong>Inspera Admin → Monitor</strong>. It replaces the dashboard's current snapshot in this browser.</p><ol class="dialog-steps"><li>In Monitor, set the start date to <strong>1 January 2026</strong> and export through your current date.</li><li>Include every available column, including hidden columns.</li><li>Select the exported CSV below, then refresh the dashboard.</li></ol><label class="file-field" for="csv-file">Monitor CSV file<input type="file" id="csv-file" accept=".csv,text/csv"></label><p class="small" style="margin:12px 0 0">The file is read locally. It is not sent to GitHub or another server. After refreshing, use “Download page” to save the updated results for sharing.</p><div id="upload-error" class="error" role="alert"></div></div><div class="dialog-actions"><button class="button secondary" id="cancel-upload" type="button">Cancel</button><button class="button" id="confirm-upload" type="button" disabled>Refresh dashboard</button></div></dialog>
+    <div class="tabs" role="tablist" aria-label="Dashboard sections"><button class="tab" role="tab" aria-selected="true" aria-controls="overview" data-tab="overview">Overview</button><button class="tab" role="tab" aria-selected="false" aria-controls="patterns" data-tab="patterns">Usage patterns</button><button class="tab" role="tab" aria-selected="false" aria-controls="students" data-tab="students">Student list</button><button class="tab" role="tab" aria-selected="false" aria-controls="quality" data-tab="quality">Definitions &amp; data</button><button class="tab" role="tab" aria-selected="false" aria-controls="report" data-tab="report">A4 report</button></div>
+    <div class="filters screen-only"><div class="filter"><label for="year">Calendar year</label><select id="year"></select></div><div class="filter"><label for="threshold">Minimum delivered attempts per candidate</label><input id="threshold" type="number" min="1" max="99" step="1" value="1"></div><div class="filter"><label for="current-seats">Current license</label><input id="current-seats" type="number" min="1" step="1" value="1200"></div><div class="filter"><label for="proposed-seats">Proposed license</label><input id="proposed-seats" type="number" min="1" step="1" value="800"></div><div class="filter-note">The minimum-use rule counts delivered attempts during the selected calendar year. It applies to the main metrics and charts.</div></div>
+    <section class="tab-panel active" id="overview" role="tabpanel"><div class="grid kpis"><div class="card kpi"><div class="label">Completed exam attempts</div><div class="number" id="kpi-attempts">—</div><div class="foot">Delivered candidate exam entries</div></div><div class="card kpi"><div class="label">Unique completing candidates</div><div class="number" id="kpi-users">—</div><div class="foot" id="kpi-users-foot">—</div></div><div class="card kpi"><div class="label">Assessment runs used</div><div class="number" id="kpi-runs">—</div><div class="foot">Distinct title and scheduled time combinations</div></div><div class="card kpi"><div class="label">Attempts per candidate</div><div class="number" id="kpi-average">—</div><div class="foot">Among candidates meeting the rule</div></div></div>
+      <div class="grid section-grid"><div class="card"><div class="card-header"><div><h2>Monthly exam activity</h2><p>Delivered attempts by actual start month</p></div><span class="tag" id="trend-year">—</span></div><div class="bars" id="monthly-bars" role="img" aria-label="Monthly completed attempts"></div><div class="legend"><span><i></i>Completed attempts</span><span id="monthly-peak">—</span><span id="coverage-note">—</span></div></div><div class="card"><div class="card-header"><div><h2>License comparison</h2><p>Distinct candidate identifiers compared with proposed seat counts</p></div></div><div class="metric-list" id="seat-bars"></div><div class="callout warning" id="seat-callout"></div><div class="small" style="margin-top:10px">This is a planning comparison. The export does not establish Inspera's billable-user rules.</div></div></div>
+      <div class="grid section-grid equal"><div class="card"><div class="card-header"><div><h2>Participation</h2><p>All candidate entries for scheduled runs in the year</p></div></div><div id="funnel-bars" class="metric-list"></div><div class="small" style="margin-top:15px">This funnel uses all source entries and is independent of the minimum-use rule. Pending entries may still start later.</div></div><div class="card"><div class="card-header"><div><h2>Reading the result</h2><p>What the current threshold changes</p></div></div><div id="overview-insight" class="method-list"></div></div></div>
+    </section>
+    <section class="tab-panel" id="patterns" role="tabpanel"><div class="card" style="margin-bottom:18px"><div class="card-header"><div><h2>Annual totals</h2><p>Completed attempts and unique candidates in each calendar year, using the selected minimum-use rule</p></div></div><div class="table-wrap"><table><thead><tr><th>Year</th><th class="num">Completed attempts</th><th class="num">Unique candidates</th><th class="num">Assessment runs used</th></tr></thead><tbody id="annual-table"></tbody></table></div></div><div class="grid section-grid equal"><div class="card"><div class="card-header"><div><h2>Completed-attempt frequency</h2><p>Candidates grouped by total delivered attempts in the year</p></div></div><div id="frequency-bars" class="metric-list"></div><div class="small" style="margin-top:15px">Distribution describes all completing candidates before the minimum-use filter.</div></div><div class="card"><div class="card-header"><div><h2>Minimum-use sensitivity</h2><p>How candidate and attempt totals change</p></div></div><div class="table-wrap"><table><thead><tr><th>Minimum attempts</th><th class="num">Candidates</th><th class="num">Attempts</th><th class="num">Vs. proposed</th></tr></thead><tbody id="sensitivity-table"></tbody></table></div></div></div><div class="grid section-grid equal"><div class="card"><div class="card-header"><div><h2>Assessment concentration</h2><p>Largest ten assessment runs by completed attempts</p></div></div><div id="run-bars" class="metric-list"></div><div class="small" id="run-note"></div></div><div class="card"><div class="card-header"><div><h2>Monthly detail</h2><p>Selected candidates' completed activity</p></div></div><div class="table-wrap"><table><thead><tr><th>Month</th><th class="num">Attempts</th><th class="num">Candidates</th><th class="num">Runs</th></tr></thead><tbody id="month-table"></tbody></table></div></div></div></section>
+    <section class="tab-panel" id="students" role="tabpanel"><div id="students-empty" class="card"><h2>View students behind the selected totals</h2><p>The shared dashboard stores summary counts only. Upload the Monitor CSV to see candidate names for the selected year and minimum-use rule on this device.</p><button class="button" id="student-upload-button">Upload Monitor CSV</button><p class="student-note" style="margin-top:14px">Names remain in this browser session and are excluded from “Download page”.</p></div><div id="students-content" class="hide"><div class="student-toolbar"><div><h2>Student list</h2><p class="student-note" id="student-explanation"></p></div><label for="student-search">Find a candidate<input type="search" id="student-search" placeholder="Search name" autocomplete="off"></label></div><div class="card student-section"><div class="card-header"><div><h2>Meets the filter</h2><p id="included-description"></p></div><span class="student-count" id="included-count"></span></div><div class="table-wrap"><table><thead><tr><th>Candidate name</th><th class="num">Completed attempts</th><th class="num">Starts</th><th class="num">Scheduled entries</th></tr></thead><tbody id="included-students"></tbody></table></div></div><div class="card student-section"><div class="card-header"><div><h2>Filtered out</h2><p id="excluded-description"></p></div><span class="student-count" id="excluded-count"></span></div><div class="table-wrap"><table><thead><tr><th>Candidate name</th><th class="num">Completed attempts</th><th class="num">Starts</th><th class="num">Scheduled entries</th></tr></thead><tbody id="excluded-students"></tbody></table></div></div><div class="card student-section"><div class="card-header"><div><h2>No completed attempt</h2><p>Candidate entries that were scheduled or started but had no delivered attempt in this year.</p></div><span class="student-count" id="zero-count"></span></div><div class="table-wrap"><table><thead><tr><th>Candidate name</th><th class="num">Completed attempts</th><th class="num">Starts</th><th class="num">Scheduled entries</th></tr></thead><tbody id="zero-students"></tbody></table></div></div><p class="student-note">This list uses exact <code>candidateId</code> text after trimming spaces and may include staff or test accounts. Names may represent duplicate people or spelling variants. The no-completion group is outside the dashboard's completed-user totals.</p></div></section>
+    <section class="tab-panel" id="quality" role="tabpanel"><div class="grid section-grid equal"><div class="card"><div class="card-header"><div><h2>Source coverage</h2><p>File and activity checks</p></div></div><div id="source-stats"></div></div><div class="card"><div class="card-header"><div><h2>Metric definitions</h2><p>Use these definitions when discussing the license</p></div></div><div class="method-list"><p><b>Completed attempt.</b> A monitor row with progress <code>delivered</code> or <code>delivered_blank</code> and a valid candidate start time.</p><p><b>Unique completing candidate.</b> An exact match of the trimmed <code>candidateId</code> text among completed attempts in the calendar year. This may differ from distinct licensed accounts.</p><p><b>Assessment run used.</b> A distinct combination of assessment run title, scheduled start and scheduled end among completed attempts. The export has no explicit run ID.</p><p><b>Year and month.</b> Taken from each candidate's actual <code>startTime</code>, not the assessment's scheduled start.</p><p><b>Minimum-use filter.</b> Retains candidates with at least N completed attempts in that year, then recounts their attempts, runs and monthly activity.</p><p><b>Program attribution.</b> The export has no reliable study-program field. Assessment creator names are staff identifiers, not a verified program mapping.</p></div></div></div><div class="card"><h2>Refresh and sharing</h2><div class="mini-grid"><div class="mini"><strong>1</strong><span>Export Monitor again, starting 1 January 2026, with all columns.</span></div><div class="mini"><strong>2</strong><span>Choose “Upload CSV” and select your Monitor export. The file is processed locally in your browser.</span></div><div class="mini"><strong>3</strong><span>Choose “Download page” and replace the GitHub Pages <code>index.html</code>. Print the A4 report for a PDF.</span></div></div><p class="privacy" style="margin-top:16px">The downloadable page contains summary counts only. It excludes candidate names, staff names, exam titles and proctoring fields. GitHub Pages sites are public by default, including sites built from private repositories. Private Pages access requires GitHub Enterprise Cloud; otherwise, use authenticated sharing for confidential results.</p></div></section>
+    <section class="tab-panel" id="report" role="tabpanel"><div class="screen-only" style="max-width:900px;margin:0 auto 15px;display:flex;justify-content:space-between;align-items:center"><p style="margin:0;font-size:12px">The report reflects the selected year, minimum-use rule and license sizes.</p><button class="button" id="report-print-button">Print A4 report</button></div><article class="report-sheet"><div class="report-top"><div><div class="eyebrow">ANNUAL MANAGEMENT REPORT</div><h2>Inspera usage review</h2><div id="report-period" class="small">—</div></div><div class="report-brand">INSPERA<br>USAGE REVIEW</div></div><p class="report-intro" id="report-intro"></p><div class="report-kpis"><div class="report-kpi"><strong id="report-attempts">—</strong><span>Completed attempts</span></div><div class="report-kpi"><strong id="report-users">—</strong><span>Distinct completing candidates</span></div><div class="report-kpi"><strong id="report-runs">—</strong><span>Assessment runs used</span></div></div><div class="report-section"><h3>License planning</h3><div id="report-license" class="method-list"></div></div><div class="report-section"><h3>Monthly completed activity</h3><div class="table-wrap"><table><thead><tr><th>Month</th><th class="num">Attempts</th><th class="num">Candidates</th><th class="num">Runs used</th></tr></thead><tbody id="report-months"></tbody></table></div></div><div class="report-footer"><span>Inspera Monitor export · calendar year <span class="report-year"></span></span><span>1 / 2</span></div></article><article class="report-sheet"><div class="report-top"><div><div class="eyebrow">SUPPORTING ANALYSIS</div><h2>Usage thresholds and definitions</h2></div><div class="report-brand">INSPERA<br>USAGE REVIEW</div></div><div class="report-section"><h3>Threshold sensitivity</h3><div class="table-wrap"><table><thead><tr><th>Minimum delivered attempts</th><th class="num">Candidates</th><th class="num">Attempts</th><th class="num">Difference to proposed seats</th></tr></thead><tbody id="report-sensitivity"></tbody></table></div></div><div class="report-section"><h3>Participation and source coverage</h3><div id="report-coverage" class="method-list"></div></div><div class="report-section"><h3>How to interpret the figures</h3><div class="method-list"><p>“Completed attempts” counts delivered candidate exam entries with a start time. “Candidates” counts distinct values in the export's <code>candidateId</code> column after trimming spaces. A person can have more than one account or name variant.</p><p>“Assessment runs used” counts distinct title and scheduled-time combinations with completed attempts. The export has no unique run ID or trustworthy study-program field.</p><p>The minimum-use rule counts each candidate's completed attempts in the selected calendar year. It removes candidates below that count from all filtered measures. The participation funnel always shows all source entries.</p><p>Seat comparisons are scenario checks, not a determination of billable users. Confirm Inspera's licensing definition and the one-program roster before changing the contract.</p></div></div><div class="report-footer"><span>Source activity through <span class="report-asof"></span> · aggregate report</span><span>2 / 2</span></div></article></section>
+  </main>
+  <script type="application/json" id="snapshot-data">{"version":1,"source":"Monitor CSV export","refreshedOn":"2026-10-02","sourceRows":12411,"malformedRows":0,"firstActivity":"2026-01-13","lastActivity":"2026-10-02","years":["2026"],"byYear":{"2026":{"sourceRows":12411,"startedRows":8455,"startedUsers":1298,"deliveredRows":8422,"undeliveredStarts":33,"funnel":{"entries":12411,"started":8455,"delivered":8422},"frequency":[182,336,325,156,293],"thresholds":[{"n":1,"users":1292,"attempts":8422,"runs":175,"months":[{"attempts":641,"users":271,"runs":31},{"attempts":2289,"users":904,"runs":77},{"attempts":1509,"users":730,"runs":60},{"attempts":1819,"users":468,"runs":45},{"attempts":875,"users":422,"runs":32},{"attempts":578,"users":302,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":22,"users":9,"runs":3},{"attempts":671,"users":382,"runs":14},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[132,128,118,101,88,88,87,87,87,86],"topTenShare":0.11897411541201615,"avgAttempts":6.518575851393189},{"n":2,"users":1110,"attempts":8240,"runs":172,"months":[{"attempts":638,"users":268,"runs":31},{"attempts":2210,"users":825,"runs":76},{"attempts":1493,"users":714,"runs":60},{"attempts":1792,"users":441,"runs":44},{"attempts":855,"users":402,"runs":30},{"attempts":570,"users":294,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":22,"users":9,"runs":3},{"attempts":642,"users":353,"runs":14},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[129,127,115,97,88,88,87,87,87,86],"topTenShare":0.12026699029126213,"avgAttempts":7.423423423423423},{"n":3,"users":877,"attempts":7774,"runs":165,"months":[{"attempts":633,"users":265,"runs":29},{"attempts":2034,"users":729,"runs":75},{"attempts":1348,"users":635,"runs":60},{"attempts":1727,"users":377,"runs":43},{"attempts":810,"users":358,"runs":27},{"attempts":561,"users":286,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":22,"users":9,"runs":3},{"attempts":621,"users":333,"runs":14},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[127,126,110,96,88,88,87,87,87,86],"topTenShare":0.12631849755595576,"avgAttempts":8.864310148232612},{"n":4,"users":774,"attempts":7465,"runs":163,"months":[{"attempts":627,"users":262,"runs":29},{"attempts":1894,"users":652,"runs":74},{"attempts":1248,"users":559,"runs":56},{"attempts":1715,"users":366,"runs":42},{"attempts":803,"users":351,"runs":27},{"attempts":541,"users":269,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":22,"users":9,"runs":3},{"attempts":597,"users":312,"runs":14},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[124,123,99,88,88,87,87,87,86,86],"topTenShare":0.12793034159410582,"avgAttempts":9.644702842377262},{"n":5,"users":694,"attempts":7145,"runs":160,"months":[{"attempts":618,"users":254,"runs":29},{"attempts":1771,"users":591,"runs":71},{"attempts":1152,"users":508,"runs":54},{"attempts":1693,"users":351,"runs":41},{"attempts":788,"users":341,"runs":26},{"attempts":523,"users":256,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":21,"users":8,"runs":3},{"attempts":561,"users":294,"runs":13},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[121,120,91,88,88,87,87,87,86,85],"topTenShare":0.13156053184044786,"avgAttempts":10.295389048991355},{"n":6,"users":562,"attempts":6485,"runs":157,"months":[{"attempts":588,"users":229,"runs":28},{"attempts":1525,"users":478,"runs":67},{"attempts":894,"users":404,"runs":51},{"attempts":1670,"users":336,"runs":41},{"attempts":759,"users":326,"runs":25},{"attempts":493,"users":227,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":20,"users":7,"runs":3},{"attempts":518,"users":260,"runs":13},{"attempts":12,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[120,119,88,88,87,87,87,86,85,70],"topTenShare":0.14140323824209713,"avgAttempts":11.53914590747331},{"n":7,"users":449,"attempts":5807,"runs":156,"months":[{"attempts":563,"users":208,"runs":28},{"attempts":1284,"users":379,"runs":65},{"attempts":628,"users":308,"runs":51},{"attempts":1640,"users":323,"runs":41},{"attempts":741,"users":315,"runs":25},{"attempts":457,"users":195,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":20,"users":7,"runs":3},{"attempts":458,"users":221,"runs":13},{"attempts":10,"users":6,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[118,117,87,87,86,86,86,86,84,69],"topTenShare":0.15601859824349923,"avgAttempts":12.933184855233852},{"n":8,"users":340,"attempts":5044,"runs":151,"months":[{"attempts":553,"users":202,"runs":26},{"attempts":886,"users":296,"runs":56},{"attempts":474,"users":247,"runs":48},{"attempts":1562,"users":298,"runs":41},{"attempts":678,"users":291,"runs":25},{"attempts":450,"users":188,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":20,"users":7,"runs":3},{"attempts":407,"users":189,"runs":13},{"attempts":8,"users":5,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[118,117,84,84,84,84,84,83,82,69],"topTenShare":0.17624900872323554,"avgAttempts":14.83529411764706},{"n":9,"users":311,"attempts":4812,"runs":139,"months":[{"attempts":536,"users":189,"runs":25},{"attempts":826,"users":270,"runs":45},{"attempts":406,"users":219,"runs":37},{"attempts":1547,"users":292,"runs":39},{"attempts":661,"users":285,"runs":24},{"attempts":439,"users":177,"runs":7},{"attempts":6,"users":5,"runs":3},{"attempts":20,"users":7,"runs":3},{"attempts":365,"users":175,"runs":13},{"attempts":6,"users":4,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[118,117,84,84,84,84,84,83,82,69],"topTenShare":0.1847464671654198,"avgAttempts":15.47266881028939},{"n":10,"users":293,"attempts":4650,"runs":131,"months":[{"attempts":529,"users":184,"runs":25},{"attempts":783,"users":256,"runs":37},{"attempts":388,"users":210,"runs":37},{"attempts":1509,"users":282,"runs":37},{"attempts":638,"users":276,"runs":23},{"attempts":428,"users":170,"runs":7},{"attempts":5,"users":4,"runs":2},{"attempts":20,"users":7,"runs":3},{"attempts":344,"users":169,"runs":13},{"attempts":6,"users":4,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[116,115,81,81,80,80,80,80,78,68],"topTenShare":0.18473118279569892,"avgAttempts":15.870307167235495},{"n":11,"users":279,"attempts":4510,"runs":112,"months":[{"attempts":522,"users":180,"runs":25},{"attempts":747,"users":244,"runs":30},{"attempts":358,"users":199,"runs":24},{"attempts":1476,"users":274,"runs":37},{"attempts":626,"users":268,"runs":23},{"attempts":422,"users":165,"runs":7},{"attempts":5,"users":4,"runs":2},{"attempts":20,"users":7,"runs":3},{"attempts":328,"users":165,"runs":13},{"attempts":6,"users":4,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[115,114,79,79,78,78,78,78,76,68],"topTenShare":0.1869179600886918,"avgAttempts":16.164874551971327},{"n":12,"users":257,"attempts":4268,"runs":108,"months":[{"attempts":508,"users":172,"runs":24},{"attempts":706,"users":226,"runs":29},{"attempts":328,"users":182,"runs":22},{"attempts":1391,"users":254,"runs":37},{"attempts":594,"users":252,"runs":23},{"attempts":411,"users":158,"runs":7},{"attempts":5,"users":4,"runs":2},{"attempts":17,"users":6,"runs":3},{"attempts":304,"users":155,"runs":13},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[114,113,73,73,72,72,72,72,71,65],"topTenShare":0.186738519212746,"avgAttempts":16.607003891050585},{"n":13,"users":237,"attempts":4028,"runs":107,"months":[{"attempts":495,"users":167,"runs":23},{"attempts":655,"users":210,"runs":29},{"attempts":291,"users":164,"runs":22},{"attempts":1323,"users":237,"runs":37},{"attempts":559,"users":235,"runs":23},{"attempts":401,"users":150,"runs":7},{"attempts":5,"users":4,"runs":2},{"attempts":14,"users":5,"runs":3},{"attempts":281,"users":152,"runs":10},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[113,113,70,70,69,68,68,68,67,64],"topTenShare":0.19116186693147963,"avgAttempts":16.9957805907173},{"n":14,"users":166,"attempts":3105,"runs":101,"months":[{"attempts":325,"users":122,"runs":21},{"attempts":497,"users":162,"runs":27},{"attempts":152,"users":97,"runs":18},{"attempts":1040,"users":166,"runs":35},{"attempts":413,"users":164,"runs":19},{"attempts":394,"users":145,"runs":7},{"attempts":4,"users":3,"runs":2},{"attempts":14,"users":5,"runs":3},{"attempts":262,"users":145,"runs":10},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[113,113,67,67,66,66,66,66,64,62],"topTenShare":0.24154589371980675,"avgAttempts":18.704819277108435},{"n":15,"users":158,"attempts":2993,"runs":101,"months":[{"attempts":322,"users":120,"runs":21},{"attempts":474,"users":154,"runs":26},{"attempts":141,"users":91,"runs":18},{"attempts":1014,"users":158,"runs":35},{"attempts":390,"users":156,"runs":17},{"attempts":387,"users":141,"runs":7},{"attempts":4,"users":3,"runs":2},{"attempts":11,"users":4,"runs":3},{"attempts":246,"users":139,"runs":10},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[113,113,66,66,65,65,65,65,63,62],"topTenShare":0.2482459071166054,"avgAttempts":18.943037974683545},{"n":16,"users":149,"attempts":2858,"runs":99,"months":[{"attempts":311,"users":115,"runs":18},{"attempts":449,"users":145,"runs":25},{"attempts":134,"users":87,"runs":17},{"attempts":979,"users":149,"runs":35},{"attempts":363,"users":147,"runs":17},{"attempts":383,"users":139,"runs":7},{"attempts":1,"users":1,"runs":1},{"attempts":11,"users":4,"runs":3},{"attempts":223,"users":131,"runs":9},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[113,113,64,64,63,63,63,63,61,61],"topTenShare":0.2547235829251225,"avgAttempts":19.181208053691275},{"n":17,"users":136,"attempts":2650,"runs":98,"months":[{"attempts":299,"users":110,"runs":18},{"attempts":411,"users":134,"runs":25},{"attempts":128,"users":81,"runs":17},{"attempts":909,"users":136,"runs":33},{"attempts":320,"users":134,"runs":17},{"attempts":365,"users":130,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":11,"users":4,"runs":3},{"attempts":203,"users":124,"runs":9},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[110,110,59,59,59,58,58,58,58,58],"topTenShare":0.2592452830188679,"avgAttempts":19.485294117647058},{"n":18,"users":126,"attempts":2480,"runs":94,"months":[{"attempts":280,"users":103,"runs":17},{"attempts":386,"users":124,"runs":22},{"attempts":120,"users":76,"runs":17},{"attempts":860,"users":126,"runs":29},{"attempts":293,"users":125,"runs":17},{"attempts":344,"users":121,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":11,"users":4,"runs":3},{"attempts":182,"users":117,"runs":9},{"attempts":4,"users":3,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[106,106,57,57,57,56,56,56,56,56],"topTenShare":0.26733870967741935,"avgAttempts":19.682539682539684},{"n":19,"users":107,"attempts":2138,"runs":93,"months":[{"attempts":250,"users":90,"runs":17},{"attempts":334,"users":105,"runs":22},{"attempts":103,"users":64,"runs":15},{"attempts":767,"users":107,"runs":29},{"attempts":238,"users":106,"runs":17},{"attempts":302,"users":104,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":6,"users":2,"runs":3},{"attempts":135,"users":98,"runs":9},{"attempts":3,"users":2,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[98,98,54,54,54,53,53,53,53,51],"topTenShare":0.29045837231057064,"avgAttempts":19.981308411214954},{"n":20,"users":83,"attempts":1682,"runs":90,"months":[{"attempts":205,"users":73,"runs":17},{"attempts":253,"users":83,"runs":18},{"attempts":81,"users":49,"runs":13},{"attempts":616,"users":83,"runs":29},{"attempts":181,"users":82,"runs":16},{"attempts":242,"users":82,"runs":6},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":99,"users":80,"runs":9},{"attempts":2,"users":1,"runs":2},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[80,79,42,42,42,42,42,41,41,41],"topTenShare":0.2925089179548157,"avgAttempts":20.265060240963855},{"n":21,"users":8,"attempts":182,"runs":48,"months":[{"attempts":22,"users":7,"runs":11},{"attempts":20,"users":8,"runs":6},{"attempts":13,"users":8,"runs":6},{"attempts":61,"users":8,"runs":15},{"attempts":15,"users":7,"runs":7},{"attempts":22,"users":8,"runs":5},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":26,"users":7,"runs":8},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[8,8,8,8,8,7,7,7,7,7],"topTenShare":0.41208791208791207,"avgAttempts":22.75},{"n":22,"users":5,"attempts":119,"runs":37,"months":[{"attempts":13,"users":4,"runs":8},{"attempts":14,"users":5,"runs":5},{"attempts":6,"users":5,"runs":2},{"attempts":42,"users":5,"runs":14},{"attempts":9,"users":4,"runs":5},{"attempts":13,"users":5,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":19,"users":4,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[5,5,5,5,5,5,5,5,5,5],"topTenShare":0.42016806722689076,"avgAttempts":23.8},{"n":23,"users":4,"attempts":97,"runs":37,"months":[{"attempts":9,"users":3,"runs":8},{"attempts":13,"users":4,"runs":5},{"attempts":5,"users":4,"runs":2},{"attempts":34,"users":4,"runs":14},{"attempts":9,"users":4,"runs":5},{"attempts":10,"users":4,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":14,"users":3,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[4,4,4,4,4,4,4,4,4,4],"topTenShare":0.41237113402061853,"avgAttempts":24.25},{"n":24,"users":3,"attempts":74,"runs":26,"months":[{"attempts":3,"users":2,"runs":2},{"attempts":12,"users":3,"runs":5},{"attempts":3,"users":3,"runs":1},{"attempts":23,"users":3,"runs":9},{"attempts":7,"users":3,"runs":4},{"attempts":9,"users":3,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":14,"users":3,"runs":7},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[3,3,3,3,3,3,3,3,3,3],"topTenShare":0.40540540540540543,"avgAttempts":24.666666666666668},{"n":25,"users":1,"attempts":26,"runs":26,"months":[{"attempts":2,"users":1,"runs":2},{"attempts":3,"users":1,"runs":3},{"attempts":1,"users":1,"runs":1},{"attempts":9,"users":1,"runs":9},{"attempts":1,"users":1,"runs":1},{"attempts":3,"users":1,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":4,"users":1,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[1,1,1,1,1,1,1,1,1,1],"topTenShare":0.38461538461538464,"avgAttempts":26},{"n":26,"users":1,"attempts":26,"runs":26,"months":[{"attempts":2,"users":1,"runs":2},{"attempts":3,"users":1,"runs":3},{"attempts":1,"users":1,"runs":1},{"attempts":9,"users":1,"runs":9},{"attempts":1,"users":1,"runs":1},{"attempts":3,"users":1,"runs":3},{"attempts":0,"users":0,"runs":0},{"attempts":3,"users":1,"runs":3},{"attempts":4,"users":1,"runs":4},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0},{"attempts":0,"users":0,"runs":0}],"largestRuns":[1,1,1,1,1,1,1,1,1,1],"topTenShare":0.38461538461538464,"avgAttempts":26}]}},"definition":"Candidates are counted by the exact trimmed candidateId text. Attempts are rows marked delivered or delivered_blank with a valid startTime. The calendar year comes from startTime."}</script>
+  <script type="application/json" id="dashboard-settings">{"year":"2026","n":1,"current":1200,"proposed":800}</script>
+  <script>/* Shared by the standalone page and the optional command-line refresh. */
+const InsperaCore = (() => {
+  const required = ['candidateId', 'progress', 'assessmentRunTitle', 'assessmentRunStartTime', 'assessmentRunEndTime', 'startTime', 'examType'];
+  const delivered = p => p === 'delivered' || p === 'delivered_blank';
+  const runKey = r => [r.assessmentRunTitle, r.assessmentRunStartTime, r.assessmentRunEndTime].join('\u001f');
+  const yearOf = value => /^\d{4}-\d{2}-\d{2}/.test(value || '') ? value.slice(0, 4) : null;
+  const monthOf = value => /^\d{4}-\d{2}-\d{2}/.test(value || '') ? Number(value.slice(5, 7)) - 1 : -1;
+  const localDate = () => { const d = new Date(); return [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-'); };
+  const monthStatus = (asOf, year, monthIndex) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(asOf || '')) return 'unknown';
+    const target = Number(year) * 12 + monthIndex;
+    const current = Number(asOf.slice(0, 4)) * 12 + Number(asOf.slice(5, 7)) - 1;
+    return target > current ? 'future' : target === current ? 'partial' : 'complete';
+  };
+
+  function parseCsv(source) {
+    source = source.replace(/^\uFEFF/, '');
+    const grid = [];
+    let row = [], field = '', quoted = false;
+    for (let i = 0; i < source.length; i++) {
+      const c = source[i];
+      if (quoted) {
+        if (c === '"' && source[i + 1] === '"') { field += '"'; i++; }
+        else if (c === '"') quoted = false;
+        else field += c;
+      } else if (c === '"') quoted = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\n') { row.push(field); grid.push(row); row = []; field = ''; }
+      else if (c !== '\r') field += c;
+    }
+    if (field || row.length) { row.push(field); grid.push(row); }
+    const headers = grid.shift() || [];
+    const missing = required.filter(c => !headers.includes(c));
+    if (missing.length) throw new Error('Missing columns: ' + missing.join(', '));
+    const rows = [];
+    let malformed = 0;
+    for (const cells of grid) {
+      if (cells.length !== headers.length) { malformed++; continue; }
+      rows.push(Object.fromEntries(headers.map((h, i) => [h, cells[i]])));
+    }
+    return { rows, malformed };
+  }
+
+  function buildSnapshot(csv) {
+    const { rows, malformed } = parseCsv(csv);
+    if (!rows.length) throw new Error('The CSV has no data rows.');
+    const actualYears = new Set(rows.map(r => yearOf(r.startTime)).filter(Boolean));
+    const scheduledYears = new Set(rows.map(r => yearOf(r.assessmentRunStartTime)).filter(Boolean));
+    const years = [...new Set([...actualYears, ...scheduledYears])].sort();
+    if (!years.length) throw new Error('No valid assessment or candidate start dates were found.');
+    const byYear = {};
+    for (const year of years) {
+      const yearStarted = rows.filter(r => yearOf(r.startTime) === year);
+      const completed = yearStarted.filter(r => delivered(r.progress));
+      const yearScheduled = rows.filter(r => yearOf(r.assessmentRunStartTime) === year);
+      const frequencies = new Map();
+      for (const r of completed) {
+        const candidate = r.candidateId.trim();
+        if (candidate) frequencies.set(candidate, (frequencies.get(candidate) || 0) + 1);
+      }
+      const maxFrequency = Math.max(1, ...frequencies.values());
+      const thresholds = [];
+      for (let n = 1; n <= maxFrequency; n++) {
+        const eligible = new Set([...frequencies].filter(([, count]) => count >= n).map(([id]) => id));
+        const selected = completed.filter(r => eligible.has(r.candidateId.trim()));
+        const runs = new Set(selected.map(runKey));
+        const months = Array.from({ length: 12 }, (_, m) => {
+          const monthRows = selected.filter(r => monthOf(r.startTime) === m);
+          return {
+            attempts: monthRows.length,
+            users: new Set(monthRows.map(r => r.candidateId.trim())).size,
+            runs: new Set(monthRows.map(runKey)).size
+          };
+        });
+        const runCounts = new Map();
+        for (const r of selected) {
+          const key = runKey(r);
+          runCounts.set(key, (runCounts.get(key) || 0) + 1);
+        }
+        const rankedRuns = [...runCounts.values()].sort((a, b) => b - a);
+        thresholds.push({
+          n, users: eligible.size, attempts: selected.length, runs: runs.size,
+          months, largestRuns: rankedRuns.slice(0, 10),
+          topTenShare: selected.length ? rankedRuns.slice(0, 10).reduce((a, b) => a + b, 0) / selected.length : 0,
+          avgAttempts: eligible.size ? selected.length / eligible.size : 0
+        });
+      }
+      const freqBuckets = [0, 0, 0, 0, 0];
+      for (const count of frequencies.values()) {
+        freqBuckets[count === 1 ? 0 : count <= 3 ? 1 : count <= 6 ? 2 : count <= 9 ? 3 : 4]++;
+      }
+      const startedCandidates = new Set(yearStarted.map(r => r.candidateId.trim()).filter(Boolean));
+      const scheduledStarted = yearScheduled.filter(r => r.startTime);
+      const scheduledDelivered = yearScheduled.filter(r => delivered(r.progress));
+      byYear[year] = {
+        sourceRows: yearScheduled.length,
+        startedRows: yearStarted.length,
+        startedUsers: startedCandidates.size,
+        deliveredRows: completed.length,
+        undeliveredStarts: yearStarted.length - completed.length,
+        funnel: { entries: yearScheduled.length, started: scheduledStarted.length, delivered: scheduledDelivered.length },
+        frequency: freqBuckets,
+        thresholds
+      };
+    }
+    const dates = rows.map(r => r.startTime).filter(x => yearOf(x)).sort();
+    return {
+      version: 1,
+      source: 'Monitor CSV export',
+      refreshedOn: localDate(),
+      sourceRows: rows.length,
+      malformedRows: malformed,
+      firstActivity: dates[0] ? dates[0].slice(0, 10) : '',
+      lastActivity: dates.length ? dates[dates.length - 1].slice(0, 10) : '',
+      years, byYear,
+      definition: 'Candidates are counted by the exact trimmed candidateId text. Attempts are rows marked delivered or delivered_blank with a valid startTime. The calendar year comes from startTime.'
+    };
+  }
+
+  function buildStudentList(csv) {
+    const { rows } = parseCsv(csv);
+    const years = new Map();
+    const entry = (year, name) => {
+      if (!years.has(year)) years.set(year, new Map());
+      const people = years.get(year);
+      if (!people.has(name)) people.set(name, { name, completed: 0, started: 0, scheduled: 0 });
+      return people.get(name);
+    };
+    for (const row of rows) {
+      const name = row.candidateId.trim();
+      if (!name) continue;
+      const scheduledYear = yearOf(row.assessmentRunStartTime);
+      const actualYear = yearOf(row.startTime);
+      if (scheduledYear) entry(scheduledYear, name).scheduled++;
+      if (actualYear) {
+        const student = entry(actualYear, name);
+        student.started++;
+        if (delivered(row.progress)) student.completed++;
+      }
+    }
+    return Object.fromEntries([...years].map(([year, people]) => [year,
+      [...people.values()].sort((a, b) => a.name.localeCompare(b.name))
+    ]));
+  }
+
+  return { parseCsv, buildSnapshot, buildStudentList, monthStatus };
+})();
+if (typeof module !== 'undefined' && module.exports) module.exports = InsperaCore;
+</script>
+  <script>
+    (() => {
+      const $ = id => document.getElementById(id);
+      const fmt = n => new Intl.NumberFormat('en-US').format(n || 0);
+      const pct = x => (100 * x).toFixed(1) + '%';
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      const cleanDocument = document.documentElement.cloneNode(true);
+      let snapshot = JSON.parse($('snapshot-data').textContent);
+      let studentDetails = null;
+      const saved = JSON.parse($('dashboard-settings').textContent);
+      const validPositive = (value, fallback) => Number.isInteger(value) && value > 0 ? value : fallback;
+      const state = {
+        year: snapshot.years.includes(saved.year) ? saved.year : snapshot.years.at(-1),
+        n: validPositive(saved.n, 1),
+        current: validPositive(saved.current, 1200),
+        proposed: validPositive(saved.proposed, 800)
+      };
+      const panel = id => document.querySelector('[data-tab="' + id + '"]');
+      function showTab(id) {
+        document.querySelectorAll('.tab').forEach(el => el.setAttribute('aria-selected', String(el.dataset.tab === id)));
+        document.querySelectorAll('.tab-panel').forEach(el => el.classList.toggle('active', el.id === id));
+        panel(id).focus();
+      }
+      document.querySelectorAll('.tab').forEach(el => el.addEventListener('click', () => showTab(el.dataset.tab)));
+      function rail(label, value, max, extra = '') { return '<div class="metric-row"><span>' + escape(label) + '</span><div class="rail ' + extra + '"><span style="width:' + (max ? Math.max(1, 100 * value / max) : 0) + '%"></span></div><strong>' + fmt(value) + '</strong></div>'; }
+      function selected() {
+        const y = snapshot.byYear[state.year];
+        return [y, y.thresholds[state.n - 1] || {n:state.n,users:0,attempts:0,runs:0,months:Array.from({length:12},()=>({attempts:0,users:0,runs:0})),typeCounts:{},largestRuns:[],topTenShare:0,avgAttempts:0}];
+      }
+      function sensitivityRows(y, report = false) {
+        const ns = [...new Set([1,2,3,4,5,10,state.n])].sort((a,b)=>a-b);
+        return ns.map(n => {
+          const t = y.thresholds[n-1] || {users:0,attempts:0};
+          const diff = t.users - state.proposed;
+          return '<tr class="' + (n === state.n ? 'highlight' : '') + '"><td>At least ' + n + '</td><td class="num">' + fmt(t.users) + '</td><td class="num">' + fmt(t.attempts) + '</td><td class="num">' + (diff > 0 ? '+' : '') + fmt(diff) + '</td></tr>';
+        }).join('');
+      }
+      function renderStudents() {
+        $('students-empty').classList.toggle('hide', Boolean(studentDetails));
+        $('students-content').classList.toggle('hide', !studentDetails);
+        if (!studentDetails) return;
+        const all = studentDetails[state.year] || [];
+        const groups = {
+          included: all.filter(s => s.completed >= state.n),
+          excluded: all.filter(s => s.completed > 0 && s.completed < state.n),
+          zero: all.filter(s => s.completed === 0)
+        };
+        const query = $('student-search').value.trim().toLocaleLowerCase();
+        $('student-explanation').textContent = state.year + ' · minimum ' + state.n + ' completed ' + (state.n === 1 ? 'attempt' : 'attempts') + ' per candidate';
+        $('included-description').textContent = 'At least ' + state.n + ' completed ' + (state.n === 1 ? 'attempt' : 'attempts') + ' during ' + state.year + '.';
+        $('excluded-description').textContent = state.n === 1 ? 'No completing candidates fall below a minimum of one.' : 'Between 1 and ' + (state.n - 1) + ' completed attempts during ' + state.year + '.';
+        for (const [key, list] of Object.entries(groups)) {
+          const shown = query ? list.filter(s => s.name.toLocaleLowerCase().includes(query)) : list;
+          $(key + '-count').textContent = query ? fmt(shown.length) + ' of ' + fmt(list.length) + ' shown' : fmt(list.length) + ' candidates';
+          $(key + '-students').innerHTML = shown.length ? shown.map(s => '<tr><td>' + escape(s.name) + '</td><td class="num">' + fmt(s.completed) + '</td><td class="num">' + fmt(s.started) + '</td><td class="num">' + fmt(s.scheduled) + '</td></tr>').join('') : '<tr><td colspan="4" class="empty">No candidates in this group' + (query ? ' match the search' : '') + '.</td></tr>';
+        }
+      }
+      function render() {
+        $('year').innerHTML = snapshot.years.map(y => '<option value="' + escape(y) + '">' + escape(y) + '</option>').join('');
+        $('year').value = state.year;
+        $('threshold').value = state.n;
+        $('current-seats').value = state.current;
+        $('proposed-seats').value = state.proposed;
+        $('top-asof').textContent = 'Refreshed ' + (snapshot.refreshedOn || 'unknown') + ' · latest start ' + (snapshot.lastActivity || 'unknown');
+        const [y, t] = selected();
+        $('kpi-attempts').textContent = fmt(t.attempts); $('kpi-users').textContent = fmt(t.users); $('kpi-runs').textContent = fmt(t.runs); $('kpi-average').textContent = t.avgAttempts.toFixed(1);
+        $('kpi-users-foot').textContent = 'At least ' + state.n + ' completed ' + (state.n === 1 ? 'attempt' : 'attempts') + ' in ' + state.year;
+        $('trend-year').textContent = state.year;
+        const maxMonth = Math.max(1, ...t.months.map(m => m.attempts));
+        $('monthly-bars').innerHTML = t.months.map((m,i) => {
+          const status = InsperaCore.monthStatus(snapshot.refreshedOn, state.year, i);
+          const future = status === 'future';
+          const title = future ? months[i] + ': after snapshot refresh' : months[i] + ': ' + fmt(m.attempts) + ' attempts' + (status === 'partial' ? ' (partial month)' : '');
+          return '<div class="bar-col ' + (future ? 'future' : '') + '" title="' + title + '"><div class="bar-track"><div class="bar-fill ' + (m.attempts ? '' : 'zero') + '" style="height:' + Math.max(2, 100*m.attempts/maxMonth) + '%"></div></div><div class="bar-value">' + (future ? '—' : m.attempts ? fmt(m.attempts) : '0') + '</div><div class="bar-label">' + months[i] + '</div></div>';
+        }).join('');
+        const peak = t.months.findIndex(m => m.attempts === maxMonth);
+        $('monthly-peak').textContent = t.attempts ? 'Peak: ' + months[peak] + ' (' + fmt(maxMonth) + ')' : 'No completed attempts';
+        const currentMonth = t.months.findIndex((_,i) => InsperaCore.monthStatus(snapshot.refreshedOn, state.year, i) === 'partial');
+        $('coverage-note').textContent = currentMonth < 0 ? '' : months[currentMonth] + ' is partial; later months are not yet observed';
+        const seatMax = Math.max(t.users, state.current, state.proposed, 1);
+        $('seat-bars').innerHTML = rail('Candidates', t.users, seatMax) + rail('Current seats', state.current, seatMax) + rail('Proposed seats', state.proposed, seatMax, 'amber');
+        const gap = t.users - state.proposed;
+        $('seat-callout').innerHTML = '<strong>' + (gap > 0 ? fmt(gap) + ' above proposed seats' : fmt(-gap) + ' below proposed seats') + '</strong>Based on ' + fmt(t.users) + ' distinct completing candidate identifiers at the selected threshold.';
+        const f = y.funnel;
+        $('funnel-bars').innerHTML = rail('Candidate entries', f.entries, f.entries) + rail('Started', f.started, f.entries) + rail('Delivered', f.delivered, f.entries);
+        const base = y.thresholds[0] || {users:0,attempts:0};
+        $('overview-insight').innerHTML = '<p><b>' + fmt(base.users - t.users) + ' candidates excluded.</b> The selected rule retains ' + fmt(t.users) + ' of ' + fmt(base.users) + ' candidates who completed an attempt.</p><p><b>' + fmt(base.attempts - t.attempts) + ' attempts excluded.</b> The remaining ' + fmt(t.attempts) + ' attempts come from candidates meeting the rule.</p><p><b>License decision.</b> Compare this scenario with a verified roster for the program continuing next year. The export alone cannot identify that program or the vendor billing population.</p>';
+        const freqLabels = ['1 attempt','2–3 attempts','4–6 attempts','7–9 attempts','10+ attempts'];
+        const freqMax = Math.max(1,...y.frequency);
+        $('frequency-bars').innerHTML = y.frequency.map((v,i)=>rail(freqLabels[i],v,freqMax)).join('');
+        $('annual-table').innerHTML = snapshot.years.map(year => { const a = snapshot.byYear[year].thresholds[state.n-1] || {attempts:0,users:0,runs:0}; return '<tr class="' + (year === state.year ? 'highlight' : '') + '"><td>' + escape(year) + '</td><td class="num">' + fmt(a.attempts) + '</td><td class="num">' + fmt(a.users) + '</td><td class="num">' + fmt(a.runs) + '</td></tr>'; }).join('');
+        $('sensitivity-table').innerHTML = sensitivityRows(y);
+        const runMax = Math.max(1,...t.largestRuns);
+        $('run-bars').innerHTML = t.largestRuns.map((v,i)=>rail('Run ' + String(i+1).padStart(2,'0'),v,runMax)).join('') || '<div class="empty">No completed runs.</div>';
+        $('run-note').textContent = 'The ten largest runs account for ' + pct(t.topTenShare) + ' of filtered attempts. Run labels are anonymous in the shared page.';
+        const monthRows = t.months.map((m,i)=>{
+          const status = InsperaCore.monthStatus(snapshot.refreshedOn, state.year, i);
+          const label = months[i] + (status === 'partial' ? ' (partial)' : '');
+          const values = status === 'future' ? ['—','—','—'] : [fmt(m.attempts),fmt(m.users),fmt(m.runs)];
+          return '<tr><td>' + label + '</td>' + values.map(v=>'<td class="num">' + v + '</td>').join('') + '</tr>';
+        }).join('');
+        $('month-table').innerHTML = monthRows; $('report-months').innerHTML = monthRows;
+        $('source-stats').innerHTML = [['Source rows',snapshot.sourceRows],['Scheduled entries in '+state.year,y.sourceRows],['Rows started in '+state.year,y.startedRows],['Unique starting candidates',y.startedUsers],['Started but not delivered',y.undeliveredStarts],['Malformed CSV rows skipped',snapshot.malformedRows]].map(([a,b])=>'<div class="statline"><span>' + escape(a) + '</span><strong>' + fmt(b) + '</strong></div>').join('') + '<p class="small" style="margin:16px 0 0">Page refreshed: ' + escape(snapshot.refreshedOn || 'unknown') + '. Latest recorded start: ' + escape(snapshot.lastActivity || '—') + '. Source: ' + escape(snapshot.source || 'Monitor CSV') + '.</p>';
+        document.querySelectorAll('.report-year').forEach(el => el.textContent=state.year);
+        document.querySelectorAll('.report-asof').forEach(el => el.textContent=snapshot.lastActivity || 'unknown');
+        $('report-period').textContent = state.year + ' · at least ' + state.n + ' delivered ' + (state.n===1?'attempt':'attempts') + ' per candidate · refreshed ' + (snapshot.refreshedOn || 'unknown');
+        $('report-intro').textContent = 'The source export records ' + fmt(y.sourceRows) + ' scheduled candidate entries for ' + state.year + '. ' + fmt(t.users) + ' distinct candidate identifiers meet the selected usage rule and account for ' + fmt(t.attempts) + ' completed attempts. The latest recorded candidate start is ' + (snapshot.lastActivity || 'unknown') + '.';
+        $('report-attempts').textContent=fmt(t.attempts); $('report-users').textContent=fmt(t.users); $('report-runs').textContent=fmt(t.runs);
+        $('report-license').innerHTML = '<p><b>Current license: ' + fmt(state.current) + ' seats.</b> Selected candidates are ' + (t.users >= state.current ? fmt(t.users-state.current) + ' above' : fmt(state.current-t.users) + ' below') + ' this count.</p><p><b>Proposed license: ' + fmt(state.proposed) + ' seats.</b> Selected candidates are ' + (t.users >= state.proposed ? fmt(t.users-state.proposed) + ' above' : fmt(state.proposed-t.users) + ' below') + ' this count. These are candidate-identifier comparisons, not confirmed billable seats.</p>';
+        $('report-sensitivity').innerHTML=sensitivityRows(y,true);
+        $('report-coverage').innerHTML='<p>The source has ' + fmt(snapshot.sourceRows) + ' rows across all years, with actual activity from ' + escape(snapshot.firstActivity || 'unknown') + ' through ' + escape(snapshot.lastActivity || 'unknown') + '. In ' + state.year + ', ' + fmt(y.startedRows) + ' candidate entries started and ' + fmt(y.deliveredRows) + ' were delivered. The page was refreshed on ' + escape(snapshot.refreshedOn || 'unknown') + '.</p><p>For scheduled runs in ' + state.year + ', the participation funnel has ' + fmt(f.entries) + ' candidate entries, ' + fmt(f.started) + ' starts and ' + fmt(f.delivered) + ' delivered entries. Pending entries may later change these totals.</p>';
+        renderStudents();
+      }
+      $('year').addEventListener('change', e => {state.year=e.target.value;render()});
+      $('threshold').addEventListener('change', e => {state.n=Math.max(1,Math.min(99,Math.floor(Number(e.target.value)||1)));render()});
+      for(const [id,key] of [['current-seats','current'],['proposed-seats','proposed']]) $(id).addEventListener('change',e=>{state[key]=Math.max(1,Math.floor(Number(e.target.value)||1));render()});
+      $('student-search').addEventListener('input',renderStudents);
+      $('student-upload-button').addEventListener('click',()=>$('upload-button').click());
+      const print = () => window.print(); $('print-button').addEventListener('click',print); $('report-print-button').addEventListener('click',print);
+      const uploadDialog = $('upload-dialog');
+      let uploadInProgress = false;
+      uploadDialog.addEventListener('cancel', e => { if (uploadInProgress) e.preventDefault(); });
+      $('upload-button').addEventListener('click',()=>{
+        $('csv-file').value='';
+        $('confirm-upload').disabled=true;
+        $('upload-error').textContent='';
+        uploadDialog.showModal();
+      });
+      $('cancel-upload').addEventListener('click',()=>uploadDialog.close());
+      $('csv-file').addEventListener('change',()=>{
+        $('confirm-upload').disabled=!$('csv-file').files.length;
+        $('upload-error').textContent='';
+      });
+      $('confirm-upload').addEventListener('click',async()=>{
+        const file=$('csv-file').files[0]; if(!file)return;
+        const button=$('confirm-upload');
+        uploadInProgress=true;
+        $('cancel-upload').disabled=true;
+        button.disabled=true; button.textContent='Reading CSV…';
+        try {
+          const csv=await file.text();
+          const next=InsperaCore.buildSnapshot(csv);
+          const people=InsperaCore.buildStudentList(csv);
+          snapshot=next;
+          studentDetails=people;
+          state.year=next.years.includes(state.year) ? state.year : next.years.at(-1);
+          $('student-search').value='';
+          render();
+          $('upload-status').textContent='Dashboard refreshed. Student names are available in the Student list tab on this device. Download the page to share aggregate results.';
+          $('csv-file').value='';
+          uploadDialog.close();
+        } catch(err) {
+          $('upload-error').textContent='Could not read this Monitor CSV: '+err.message;
+        } finally {
+          uploadInProgress=false;
+          $('cancel-upload').disabled=false;
+          button.textContent='Refresh dashboard';
+          button.disabled=!$('csv-file').files.length;
+        }
+      });
+      $('download-button').addEventListener('click',()=>{
+        const json=JSON.stringify(snapshot).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');
+        const copy=cleanDocument.cloneNode(true);
+        copy.querySelector('#snapshot-data').textContent=json;
+        copy.querySelector('#dashboard-settings').textContent=JSON.stringify(state);
+        const html='<!doctype html>\n'+copy.outerHTML;
+        const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));
+        const a=document.createElement('a'); a.href=url; a.download='index.html'; document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+      });
+      render();
+    })();
+  </script>
+</body>
+</html>
